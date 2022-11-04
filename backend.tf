@@ -11,14 +11,5 @@ terraform {
     container_name       = "tfstate01"
     key                  = "testa/terraform.tfstate"
   }
-
 }
 
-provider "azurerm" {
-  features {}
-}
-
-resource "azurerm_resource_group" "state-demo-secure" {
-  name     = "state-demo"
-  location = "koreacentral"
-}
